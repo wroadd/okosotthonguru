@@ -9,7 +9,7 @@ conditions:
     entity_id: person.apa
     state: home
   - condition: template
-    value_template: >+
+    value_template: >-
       {{(as_timestamp(now()) -
       as_timestamp(states.person.apa.last_changed)) < 300 }}
 
